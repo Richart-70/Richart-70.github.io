@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documento sin título</title>
+<link href="../css/style_page_2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Tablas en Html</h1>
+</header>
+<nav>
+	<ul id="menu">
+    <li><a href="../html/formatos_texto.html">Formatos Textos</a></li>
+    <li><a href="../html/listas-practica.html">Listas</a></li>
+    <li><a href="../html/enlaces.html">Enlaces</a></li>
+    <li><a href="../html/tablas.html">Tablas</a></li>
+	 <li><a href="../html/img.html">Imagenes</a></li>
+		<li><a href="../html/audios.html">Audios</a></li>
+		<li><a href="../html/video.html">Videos</a></li>
+		<li><a href="../html/formularios.html">Formularios</a></li>   
+  </ul>
+	</nav>
+<main>
+  <section>
+    <h2>Tabla desde codigo</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="enlaces.html">enlaces </a>Quas eligendi repellat, vero sequi, neque fuga natus! Quod dolorum, quam laborum quos eaque. Veniam veritatis eius eligendi sunt quod necessitatibus pariatur, deleniti sit dicta rem nulla architecto reiciendis tenetur fugiat alias. Quos accusantium esse provident ullam eveniet, quam qui cum molestias.</p>
+	  <table id="tabla_1">
+		  <thead>
+		  <tr>
+			  <th>Nombre</th>
+			  <th>Pais</th>
+			  <th>Email</th>
+			  <th>Cuota de Taller</th>
+		  </tr>
+		</thead>
+		  <tbody>
+			  <tr>
+				  <td>Rosa Lopez</td>
+				  <td>Pintura</td>
+				  <td>rosa@gmail.com</td>
+				  <td>800</td>
+			  </tr>
+			  <tr>
+				  <td>Luis Perez</td>
+				  <td>Dibujo</td>
+				  <td>luisper@gmail.com</td>
+				  <td>700</td>
+			  </tr>
+			   <tr>
+				  <td>Yare Sanchez</td>
+				  <td>Fotografia</td>
+				  <td>yaresan@gmail.com</td>
+				  <td>1200</td>
+			  </tr>
+			   <tr>
+				  <td>Kai Castellanos</td>
+				  <td>Arte</td>
+				  <td>kai20@gmail.com</td>
+				  <td>600</td>
+			  </tr>
+			   <tr>
+				  <td>Alis Armas</td>
+				  <td>Escultura</td>
+				  <td>alis80@gmail.com</td>
+				  <td>600</td>
+			  </tr>
+		  </tbody>
+		  <tfoot>
+			  <tr> 
+				  <td></td>
+				  <td></td>
+				  <td>Total de inscripción</td>
+				  <td>3900</td>
+			  </tr>
+		  </tfoot>
+	  </table>
+</section>
+  <section>
+    <h2>Tabla con estilo css y uso de rowspan</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="enlaces.html">enlaces </a>Quas eligendi repellat, vero sequi, neque fuga natus! Quod dolorum, quam laborum quos eaque. Veniam veritatis eius eligendi sunt quod necessitatibus pariatur, deleniti sit dicta rem nulla architecto reiciendis tenetur fugiat alias. Quos accusantium esse provident ullam eveniet, quam qui cum molestias.</p>
+    <table id="tabla_2">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Pais</th>
+          <th>Email</th>
+          <th>Cuota de Taller</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rosa Lopez</td>
+          <td>Pintura</td>
+          <td>rosa@gmail.com</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <td>Luis Perez</td>
+          <td>Dibujo</td>
+          <td>luisper@gmail.com</td>
+          <td>700</td>
+        </tr>
+        <tr>
+          <td>Yare Sanchez</td>
+          <td>Fotografia</td>
+          <td>yaresan@gmail.com</td>
+          <td>1200</td>
+        </tr>
+        <tr>
+          <td>Kai Castellanos</td>
+          <td>Arte</td>
+          <td>kai20@gmail.com</td>
+          <td>600</td>
+        </tr>
+        <tr>
+          <td>Alis Armas</td>
+          <td>Escultura</td>
+          <td>alis80@gmail.com</td>
+          <td>600</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <!--<td></td>
+          <td></td>-->
+          <td colspan="3" style="background-color: #4D8FB5; font-weight: bold; color: #FFFFFF">Total de inscripción</td>
+          <td>3900</td>
+        </tr>
+      </tfoot>
+    </table>
+	  
+    </section>
+  <section>
+    <h2>Tabla con cebras en horizontal o filas </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="enlaces.html">enlaces </a>Quas eligendi repellat, vero sequi, neque fuga natus! Quod dolorum, quam laborum quos eaque. Veniam veritatis eius eligendi sunt quod necessitatibus pariatur, deleniti sit dicta rem nulla architecto reiciendis tenetur fugiat alias. Quos accusantium esse provident ullam eveniet, quam qui cum molestias.</p>
+    <table border="1" cellspacing="5" id="tabla_3">
+		<thead>
+			<tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Correo Electronico</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Carro</th>
+        </tr>
+		</thead>
+      <tbody>
+        <tr>
+          <td>Max Verstappen </td>
+          <td>max10@gmail.com</td>
+          <td>2225879089</td>
+          <td>21</td>
+          <td>Honda</td>
+        </tr>
+        <tr>
+          <td>Lewis Hamilton</td>
+          <td>hamil07@gmail.com</td>
+          <td>2224356782</td>
+          <td>24</td>
+          <td>Mercedez</td>
+        </tr>
+        <tr>
+          <td>Carlos Sainz</td>
+          <td>carlitos54@gmail.com</td>
+          <td>2221345131</td>
+          <td>23</td>
+          <td>Ferrari</td>
+        </tr>
+        <tr>
+          <td>Sergio Perez</td>
+          <td>checoperez@gmail.com</td>
+          <td>2223146784</td>
+          <td>26</td>
+          <td>Jetta</td>
+        </tr>
+      </tbody>
+    </table>
+</section>
+  <section>
+    <h2>Tabla con cebras en vertical o columna</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="enlaces.html">enlaces</a> Quas eligendi repellat, vero sequi, neque fuga natus! Quod dolorum, quam laborum quos eaque. Veniam veritatis eius eligendi sunt quod necessitatibus pariatur, deleniti sit dicta rem nulla architecto reiciendis tenetur fugiat alias. Quos accusantium esse provident ullam eveniet, quam qui cum molestias.</p>
+    <table border="1" cellspacing="5" id="tabla_4">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Correo Electronico</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Carro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Max Verstappen </td>
+          <td>max10@gmail.com</td>
+          <td>2225879089</td>
+          <td>21</td>
+          <td>Honda</td>
+        </tr>
+        <tr>
+          <td>Lewis Hamilton</td>
+          <td>hamil07@gmail.com</td>
+          <td>2224356782</td>
+          <td>24</td>
+          <td>Mercedez</td>
+        </tr>
+        <tr>
+          <td>Carlos Sainz</td>
+          <td>carlitos54@gmail.com</td>
+          <td>2221345131</td>
+          <td>23</td>
+          <td>Ferrari</td>
+        </tr>
+        <tr>
+          <td>Sergio Perez</td>
+          <td>checoperez@gmail.com</td>
+          <td>2223146784</td>
+          <td>26</td>
+          <td>Jetta</td>
+        </tr>
+      </tbody>
+    </table>
+    </section>
+  <section>
+    <h2>Tabla flotante (hover)</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="enlaces.html">enlaces</a> Quas eligendi repellat, vero sequi, neque fuga natus! Quod dolorum, quam laborum quos eaque. Veniam veritatis eius eligendi sunt quod necessitatibus pariatur, deleniti sit dicta rem nulla architecto reiciendis tenetur fugiat alias. Quos accusantium esse provident ullam eveniet, quam qui cum molestias.</p>
+    <table border="1" cellspacing="5" id="tabla_5">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Correo Electronico</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Carro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Max Verstappen </td>
+          <td>max10@gmail.com</td>
+          <td>2225879089</td>
+          <td>21</td>
+          <td>Honda</td>
+        </tr>
+        <tr>
+          <td>Lewis Hamilton</td>
+          <td>hamil07@gmail.com</td>
+          <td>2224356782</td>
+          <td>24</td>
+          <td>Mercedez</td>
+        </tr>
+        <tr>
+          <td>Carlos Sainz</td>
+          <td>carlitos54@gmail.com</td>
+          <td>2221345131</td>
+          <td>23</td>
+          <td>Ferrari</td>
+        </tr>
+        <tr>
+          <td>Sergio Perez</td>
+          <td>checoperez@gmail.com</td>
+          <td>2223146784</td>
+          <td>26</td>
+          <td>Jetta</td>
+        </tr>
+      </tbody>
+    </table>
+    </section>
+  <section>
+    <h2>Tabla receptiva</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nihil, ipsum dicta laboriosam placeat, nobis fuga praesentium tempora eum commodi, quod! Quae animi corporis est in rerum blanditiis ipsam deleniti assumenda odio. Tenetur provident necessitatibus totam voluptatum, nesciunt ipsa temporibus. </p>
+    <div id="tabla_receptiva">
+      <table border="1" cellspacing="5" id="tabla_6">
+        <tbody>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Puntos</th>
+          </tr>
+          <tr>
+            <td>Jordan</td>
+            <td>50</td>
+            <td>35</td>
+            <td>45</td>
+            <td>67</td>
+            <td>89</td>
+            <td>65</td>
+            <td>45</td>
+            <td>67</td>
+            <td>78</td>
+            <td>89</td>
+            <td>90</td>
+            <td>65</td>
+            <td>70</td>
+            <td>53</td>
+          </tr>
+          <tr>
+            <td>Alex</td>
+            <td>30</td>
+            <td>45</td>
+            <td>67</td>
+            <td>85</td>
+            <td>52</td>
+            <td>29</td>
+            <td>67</td>
+            <td>84</td>
+            <td>47</td>
+            <td>77</td>
+            <td>90</td>
+            <td>56</td>
+            <td>64</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>Steven</td>
+            <td>25</td>
+            <td>20</td>
+            <td>15</td>
+            <td>10</td>
+            <td>35</td>
+            <td>48</td>
+            <td>69</td>
+            <td>78</td>
+            <td>94</td>
+            <td>19</td>
+            <td>58</td>
+            <td>74</td>
+            <td>72</td>
+            <td>89</td>
+          </tr>
+          <tr>
+            <td>Pietro</td>
+            <td>70</td>
+            <td>80</td>
+            <td>60</td>
+            <td>30</td>
+            <td>25</td>
+            <td>46</td>
+            <td>58</td>
+            <td>89</td>
+            <td>52</td>
+            <td>21</td>
+            <td>28</td>
+            <td>36</td>
+            <td>38</td>
+            <td>90</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</section>
+</main>
+<footer>Elaborado por Ricardo Sanchez Valdovino</footer>
+</body>
+</html>
